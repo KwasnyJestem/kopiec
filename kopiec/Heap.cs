@@ -23,7 +23,7 @@ public class Heap<T> where T : IComparable<T>
     {
         foreach(var element in collection)
         {
-            Insert(element);
+            Insert(element); //do poprawy
         }
     }
 
@@ -32,7 +32,13 @@ public class Heap<T> where T : IComparable<T>
 
     public void Insert(T x)
     {
-        throw new NotImplementedException(); //ToDo
+        if(Count == 0)
+        {
+            return;
+        }
+
+        list.Insert(Count, x);
+        
     }
 
 
