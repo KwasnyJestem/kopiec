@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using System.Text;
 
+
+public enum HeapOptions { MaxHeap = -1, MinHeap = 1 } //to do wyjebania potem XD
+
+
 public class Heap<T> where T : IComparable<T>
 {
     private List<T> list;

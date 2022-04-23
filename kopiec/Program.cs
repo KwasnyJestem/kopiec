@@ -2,8 +2,6 @@
 
 namespace kopiec
 {
-    public enum HeapOptions { MaxHeap = -1, MinHeap = 1 }
-
     class Program
     {
         static void Main(string[] args)
